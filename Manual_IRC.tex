@@ -47,14 +47,14 @@
 \begin{document}
 
 \begin{center}
-{\bf \large Manual de Instalaci\'on del IRC}\footnote{Manual realizado por Milagros López y David Hernández para la comunidad Ubuntu-ve.}
+{\bf \large Manual de Instalaci\'on del IRC}\footnote{Hecho en {\large\LaTeX} por por Milagros López y David Hernández para la comunidad Ubuntu-ve.}
 \end{center}
 
 En este peque\~no manual se explicar\'a c\'omo instalar \textit {HexChat}, uno de los tantos cliente que se utiliza para conectarse a los canales IRC, se ha seleccionado por ser uno de los más sencillos de manejar.
 
-El IRC y sus canales son muy usados para dar soporte en la red, es simple, de texto plano, no tiene gif y/o emoticones que pueden distraer, aunque fue creado en 1988 se sigue usando para consultas y por qué no, también para socializar.
+El IRC y sus canales son muy usados para dar soporte en la red, es simple, de texto plano, no tiene gif y/o emoticones que pueden distraer, aunque fue creado en 1988 se sigue utilizando para consultas y por qué no, también para socializar.
 
-\textbf {IRC (Internet Relay Chat)} es un protocolo de comunicaci\'on en tiempo real basado en texto, que permite debates entre dos o m\'as personas. Se diferencia de la mensajer\'ia instant\'anea en que los usuarios no deben acceder a establecer la comunicaci\'on de antemano, de tal forma que todos los usuarios que se encuentran en un canal pueden comunicarse entre s\'i, aunque no hayan tenido ning\'un contacto anterior. Las conversaciones se desarrollan en los llamados canales de IRC, designados por nombres que habitualmente comienzan con el car\'acter ``\#". Es un sistema de charlas ampliamente utilizado por personas de todo el mundo.
+\textbf {IRC (Internet Relay Chat)} es un protocolo de comunicaci\'on en tiempo real basado en texto, que permite debates entre dos o m\'as personas. Se diferencia de la mensajer\'ia instant\'anea en que los usuarios no deben acceder para establecer la comunicaci\'on de antemano, de tal forma que todos los usuarios que se encuentran en un canal pueden comunicarse entre s\'i, aunque no hayan tenido ning\'un contacto anterior. Las conversaciones se desarrollan en los llamados canales de IRC, designados por nombres que habitualmente comienzan con el car\'acter ``\#". Es un sistema de charlas ampliamente utilizado por personas de todo el mundo.
 
 Los usuarios del IRC utilizan una aplicaci\'on cliente para conectarse con un servidor, en el que funciona una aplicaci\'on IRCd (IRC daemon o servidor de IRC) que gestiona los canales y las conversaciones murales.
 
@@ -64,28 +64,28 @@ Ahora, procedemos a instalar HexChat,  HexChat es un \textit{fork} del cliente X
 \begin{enumerate}
 \item Lo primero que debemos hacer es abrir una terminal, en escritorios basados en Gnome se puede acceder a trav\'es  de la combinaci\'on de teclas \verb!Ctrl + Alt + t! (al mismo tiempo). 
 
-Ahora sí, comencemos con actualizar la lista de paquetes que tenemos disponibles, esto lo haremos escribiendo en el terminal lo siguiente:
+Una vez dentro del terminal procedemos a actualizar la lista de paquetes que tenemos disponibles, esto lo haremos escribiendo lo siguiente:
 
 \begin{verbatim}
 sudo apt-get update
 \end{verbatim}
 
-\item Ahora que ya tenemos actualizado los paquetes procedemos a descargar HexChat escribiendo el siguiente comando en el terminal:
+\item Actualizados los paquetes procedemos a descargar HexChat escribimos el siguiente comando en el terminal:
 
 \begin{verbatim}
 sudo apt-get install hexchat
 \end{verbatim}
 
-\item Ya lo tenemos instalado, procedemos a abrirlo y nos muestra lo siguiente:
+\item Ya lo tenemos instalado, ahora abrimos el programa y nos mostrará lo siguiente:
 
 \includegraphics[width = 7cm]{imagenes/imagen1.png}
 
-Como se puede apreciar nos solicita información con respecto a nuestro apodo (Nickname), y dos alternativas mas, al igual que nuestro nombre real.
+Como se puede apreciar nos solicita información con respecto a nuestro apodo (o \textit{nickname} en inglés), y dos alternativas más, además de nuestro nombre real.
 
-En nuestro caso nos interesa entrar al servidor \textit{freenode}, el cual configuraremos para que nos conecte directamente.
+En nuestro caso nos interesa entrar al servidor \textit{freenode}, el cual configuraremos para que el programa se conecte a él automáticamente al iniciar.
 
 \begin{enumerate}
-\item Comenzamos con hacer click en \textbf{Editar}. Luego hacemos click en la pestaña \textbf{Autoentrar a los canales}. Aquí iremos agregando los canales que deseamos mantener, recordando que los canales comienzan con el carácter ``\#", escribiremos \texttt{\#ubuntu-ve} al seleccionar la opci\'on \textbf{A\~nadir}.
+\item Comenzamos haciendo click en \textbf{Editar}. Luego click en la pestaña \textbf{Autoentrar a los canales}. Aquí iremos agregando los canales que deseamos mantener, recordando que los canales comienzan con el carácter ``\#", escribiremos \texttt{\#ubuntu-ve} al seleccionar la opci\'on \textbf{A\~nadir}.
 
 \includegraphics[width = 7cm]{imagenes/imagen2.png}
 
@@ -104,41 +104,41 @@ En nuestro caso nos interesa entrar al servidor \textit{freenode}, el cual confi
 
 Ahora que ya tenemos instalado nuestro cliente aprendamos un poco sobre el manejo de los comandos en el IRC.
 
-La sintaxis de todos los comandos en los canales, comienza siempre por {\bfseries\itshape /}
+La sintaxis de todos los comandos en los canales, comienza siempre con el carácter ``{\bfseries\itshape /}"
 
 Algunos comandos son:
 
-\begin{tabularx}{15cm}{||c|X|c||}
+\begin{tabularx}{15cm}{||l|X|l||}
 \hline\hline
 \textbf{Comando} & \textbf{Descripci\'on}  & \textbf{Uso} \\
 \hline \hline
-whois & Ver informaci\'on de un usuario, si está conectado y/o en que canales se encuentra & \texttt{/whois Abr1l} \\
+{\bfseries\itshape /}whois & Ver informaci\'on de un usuario, si está conectado y/o en que canales se encuentra & \texttt{/whois Abr1l} \\
 \hline
-who & Ver usuarios en un canal aunque no se esté adentro de él & \texttt{/who \#ubuntu-ve} \\
+{\bfseries\itshape /}who & Ver usuarios en un canal aunque no se esté adentro de él & \texttt{/who \#ubuntu-ve} \\
 \hline 
-join & Entrar o crear un canal & \texttt{/join \#ubuntu-es} \\
+{\bfseries\itshape /}join & Entrar o crear un canal & \texttt{/join \#ubuntu-es} \\
 \hline
-nick & Cambiar el nick (apodo) actual por otro & \texttt{/nick Abril} \\
+{\bfseries\itshape /}nick & Cambiar el nick (apodo) actual por otro & \texttt{/nick Abril} \\
 \hline
-part & Salir de un canal con un comando & \texttt{/part} \\
+{\bfseries\itshape /}part & Salir de un canal con un comando & \texttt{/part} \\
 \hline 
-me & Enviar un mensaje como acci\'on, por ejemplo: Abr1l est\'a feliz & \texttt{/me est\'a feliz} \\
+{\bfseries\itshape /}me & Enviar un mensaje como acci\'on, por ejemplo: Abr1l est\'a feliz & \texttt{/me est\'a feliz} \\
 \hline
-ignore & Ignorar un nick & \texttt{/ignore Abr1l} \\
+{\bfseries\itshape /}ignore & Ignorar un nick & \texttt{/ignore Abr1l} \\
 \hline\hline
 \end{tabularx} 
 
 \begin{center} % Centra el Texto
-{\bf \large Registrando el nick en IRC y enmascarando la IP} % Negrilla
+{\bf \large Registrando el apodo en IRC y enmascarando la IP} % Negrilla
 \end{center}
 
-Ya tenemos todo lo necesario para usar esta herramienta, ahora aprenderemos a registrar nuestro nick y luego a enmascarar nuestra ip para evitar que se muestre.
+Ya tenemos todo lo necesario para usar esta herramienta, ahora aprenderemos a registrar nuestro apodo y luego a enmascarar nuestra ip para evitar que esta se muestre.
 
-?`Para qu\'e registrar nuestro nick? Pues as\'i s\'olo nosotros lo podr\'iamos usar, y siempre que aparezca ese nick en cualquier canal sepan que somos nosotros, los pasos son: 
+?`Para qu\'e registrar nuestro apodo? Pues as\'i s\'olo nosotros lo podr\'iamos usar, y siempre que aparezca ese apodo en cualquier canal sepan que somos nosotros, los pasos son: 
 
 \begin{enumerate}
 
-\item Escoger un nick (apodo) que no se encuentre ya registrado.
+\item Escoger un apodo (\textit{nick}) que no se encuentre ya registrado.
 
 \item En \textsl{freenode}, escribiremos:\\
 \verb!/msg NickServ REGISTER nuestra-contraseña nuestro-correo!
@@ -149,18 +149,9 @@ Ya tenemos todo lo necesario para usar esta herramienta, ahora aprenderemos a re
 \item Ahora, cada vez que nos conectemos debemos usar el siguiente comando para autenticarnos: \\
 \verb!/msg NickServ identify nuestra-contraseña!
     
-\item Para solicitar el enmascaramiento (cloak) de nuestra ip entraremos al canal \textsl{freenode}, \texttt{/join \#freenode} y solicitaremos hablar con un \textit{staff} (en inglés). Una vez en el canal escribimos \texttt{/stats p} para encontrar los staff activos y luego escribimos: \textit{ Hi, can you help me? Please, I would like to get my nick cloaked.}  y nos contestar\'an, en ingl\'es, inform\'andonos que tenemos cloak (enmascaramiento de la ip).
+\item Para solicitar el enmascaramiento (\textit{cloak}) de nuestra ip entraremos al canal \textsl{freenode}, \texttt{/join \#freenode} y solicitaremos hablar con un \textit{staff} (en inglés). Una vez en el canal escribimos \texttt{/stats p} para mostrar los staff activos y luego escribimos: \textit{ Hi, can you help me? Please, I would like to get my nick cloaked.}  y nos contestar\'an, en ingl\'es, inform\'andonos que tenemos cloak (enmascaramiento de la ip).
 
 \end{enumerate}
-
-
-
-
-
-
-
-
-
 
 %\begin{itemize}
 %\item[\bf /whois ] Ver información de un usuario, si esta conectado y/o en que canales se encuentra p.e. /whois abr1l
@@ -170,7 +161,12 @@ Ya tenemos todo lo necesario para usar esta herramienta, ahora aprenderemos a re
 
 %\end{itemize}
 \noindent\rule{\textwidth}{1pt}
-Hecho en \LaTeX
+
+\begin{center}
+\includegraphics[scale=.75]{imagenes/cc-by.png}\\
+Este obra está bajo una licencia de Creative Commons Reconocimiento 4.0 Internacional.
+\end{center}
+
 
 \theendnotes
 \end{document}
